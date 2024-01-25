@@ -14,7 +14,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 1rem;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 #first-message, .last-message {
@@ -22,7 +22,7 @@ body {
     border-radius: 2rem;
     padding: 1.2rem;
     height: 50%;
-    width: 50%;
+    width: 25%;
 }
 #first-message img {
 background-color: hsl(212, 14%, 25%);
@@ -109,14 +109,13 @@ ul {
     text-align: center;
 }
 footer {
-    position: relative;
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     display: flex;
     align-content: center;
     justify-content: center;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     #first-message, .last-message {
         background-color: hsl(213, 19%, 18%);
         border-radius: 1.5rem;
