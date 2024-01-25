@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+ font-family: sans-serif;
+ font-size: 15px;
+ background-color: hsl(216, 12%, 8%);
+}
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    min-height: 100vh;
+}
+
+#first-message, .last-message {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2rem;
+    padding: 1.2rem;
+    height: 50%;
+    width: 50%;
+}
+#first-message img {
+background-color: hsl(212, 14%, 25%);
+border-radius: 50%;
+padding: 0.4rem;
+}
+ h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0;
+}
+#first-message p {
+    color: hsl(216, 12%, 54%);
+}
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0.5rem 0;
+}
+.number {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: hsl(212, 14%, 25%);
+    color: hsl(216, 12%, 54%);
+    border: none;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.number:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.number:focus {
+    background-color:  hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+#submit-button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.4rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color:  hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 0.1rem;
+}
+#submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.last-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+.last-message img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+.last-message .gray {
+    background-color: hsl(212, 14%, 25%);
+    border-radius: 20px;
+    padding: 0 0.5rem;
+    color: hsl(25, 97%, 53%);
+}
+.last-message p {
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+}
+footer {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 400px) {
+    #first-message, .last-message {
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        width: 85%;
+    }
+    ul {
+        margin:  1rem 0;
+    }
+    .number {
+        height: 2.2rem;
+        width: 2.2rem;
+        border-radius: 50%;
+        background-color: hsl(212, 14%, 25%);
+        color: hsl(216, 12%, 54%);
+        border: none;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+}
